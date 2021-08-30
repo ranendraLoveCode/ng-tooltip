@@ -1,0 +1,91 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": false
+  },
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "ng-tooltip": {
+      "projectType": "library",
+      "root": "projects/ng-tooltip",
+      "sourceRoot": "projects/ng-tooltip/src",
+      "prefix": "ng",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/ng-tooltip/tsconfig.lib.json",
+            "project": "projects/ng-tooltip/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ng-tooltip/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng-tooltip/src/test.ts",
+            "tsConfig": "projects/ng-tooltip/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-tooltip/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ng-tooltip/tsconfig.lib.json",
+              "projects/ng-tooltip/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "ng-tooltip-directive": {
+      "projectType": "library",
+      "root": "projects/ng-tooltip-directive",
+      "sourceRoot": "projects/ng-tooltip-directive/src",
+      "prefix": "ng",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/ng-tooltip-directive/tsconfig.lib.json",
+            "project": "projects/ng-tooltip-directive/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ng-tooltip-directive/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng-tooltip-directive/src/test.ts",
+            "tsConfig": "projects/ng-tooltip-directive/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-tooltip-directive/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ng-tooltip-directive/tsconfig.lib.json",
+              "projects/ng-tooltip-directive/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "ng-tooltip"
+}
