@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NgTooltipDirectiveComponent } from './ng-tooltip-directive.component';
+import { TooltipComponent } from './tooltip.component';
 
-describe('NgTooltipDirectiveComponent', () => {
-  let component: NgTooltipDirectiveComponent;
-  let fixture: ComponentFixture<NgTooltipDirectiveComponent>;
+describe('TooltipComponent', () => {
+  let component: TooltipComponent;
+  let fixture: ComponentFixture<TooltipComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NgTooltipDirectiveComponent ]
+      declarations: [ TooltipComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NgTooltipDirectiveComponent);
+    fixture = TestBed.createComponent(TooltipComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

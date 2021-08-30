@@ -11,16 +11,6 @@
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
-    "paths": {
-      "ng-tooltip": [
-        "dist/ng-tooltip/ng-tooltip",
-        "dist/ng-tooltip"
-      ],
-      "ng-tooltip-directive": [
-        "dist/ng-tooltip-directive/ng-tooltip-directive",
-        "dist/ng-tooltip-directive"
-      ]
-    },
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
@@ -29,7 +19,12 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ng-tooltip-directive": [
+        "dist/ng-tooltip-directive"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

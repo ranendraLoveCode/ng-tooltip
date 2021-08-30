@@ -1,6 +1,28 @@
 {
   "name": "ng-tooltip-directive",
   "version": "1.0.0",
+  "description": "Tooltip for Angular",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ranendraLoveCode/ng-tooltip-directive.git"
+  },
+  "author": {
+    "name": "Ranendranath Halder",
+    "email": "ranendra.rock@gmail.com"
+  },
+  "keywords": [
+    "Angular",
+    "Angular 2",
+    "ng2",
+    "ngx",
+    "tooltip",
+    "ng-tooltip"
+  ],
+  "homepage": "https://github.com/ranendraLoveCode/ng-tooltip-directive",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ranendraLoveCode/ng-tooltip-directive/issues"
+  },
   "peerDependencies": {
     "@angular/common": "^11.2.14",
     "@angular/core": "^11.2.14"
